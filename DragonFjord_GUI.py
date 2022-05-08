@@ -621,9 +621,9 @@ class GUIHandler:
                 self.spin_box.setDefaultValue()
                 self.recordSolutionIndex()
 
-        self.is_solution_found = True
-        self.spin_box.updateValue()
-        self.recordDayMonth()
+            self.is_solution_found = True
+            self.spin_box.updateValue()
+            self.recordDayMonth()
         
         self.solver_button.releaseButton()
 
