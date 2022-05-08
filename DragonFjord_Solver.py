@@ -628,7 +628,7 @@ def run(day, month):
     print("{} solution(s) were found".format(len(Dragon.solution_set)))
     unique_solution_set = removeDuplicates(Dragon.solution_set)
     print("{} unique solution(s) were found.".format(len(unique_solution_set)))
-    printSolution(unique_solution_set, 0)
+    printSolution(unique_solution_set, 1)
     return Dragon
 
 
@@ -705,11 +705,11 @@ def writeToFile(results, fname):
 
 
 if __name__ == "__main__":
-    passed, failed = test()
-    writeToFile(passed, "rev4_optimised_passed")
-    writeToFile(failed, "rev4_optimised_failed")
+    # passed, failed = test()
+    # writeToFile(passed, "rev4_optimised_passed")
+    # writeToFile(failed, "rev4_optimised_failed")
 
-    # dragon = run(31, 1)
+    dragon = run(31, 1)
     # unique_solution_set = removeDuplicates(dragon.solution_set)
     # print(len(dragon.solution_set))
     # print(len(unique_solution_set))
